@@ -1,4 +1,7 @@
 import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+
 import json
 import numpy as np
 import pandas as pd
@@ -14,9 +17,9 @@ from datetime import datetime
 from config import Config
 from data_processor import extract_high_frequency_actions, DataProcessor
 from physician_policy import PhysicianPolicy
-from rl_models import MTLDuelingQLearning, MTLAttentionCQL, MTL_RLTrainer
-from OPE import OPEE
-from setup import setup_logger, setup_seed
+from models import MTLDuelingQLearning, MTLAttentionCQL, MTL_RLTrainer
+from ope_evaluator import OPEE
+from utils import setup_logger, setup_seed
 from arrhythmia_analysis import plot_usage_by_arrhythmia
 
 
