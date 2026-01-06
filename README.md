@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ### 1. Data Preparation
 1. Obtain MIMIC-III dataset access from [PhysioNet](https://physionet.org/content/mimiciii/1.4/)
 2. Preprocess the data to create `mimictabl.csv` with the required columns (see `data/README.md` for schema)
-3. Place your `mimictabl.csv` file in the `./dataset/` directory
+3. Place your `mimictable.csv` file in the `./dataset/` directory
 
 ### 2. Run Main Training
 Execute the end-to-end training pipeline:
