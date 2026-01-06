@@ -161,6 +161,6 @@ If you use this code in your research, please cite:
   year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/yourusername/sepsis-rl-treatment}}
+  howpublished = {\url{https://github.com/MiliFang/sepsis-rl-treatment}}
 }
 ```
