@@ -49,8 +49,6 @@ For a reference implementation of the data extraction and preprocessing pipeline
 - [Sepsis-3 Definition Implementation](https://github.com/mi3-gmu/sepsis3-mimic)
 - [Komorowski et al. Code Repository](https://github.com/matthieukomorowski/AI_Clinician)
 
-> **Note**: This repository does not provide the actual data extraction scripts due to data use restrictions. You must create your own pipeline following your institution's data governance policies.
-
 ## Scientific Context
 
 This project builds upon the groundbreaking work published in Nature Medicine by Komorowski et al. (2018), "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care." The original study demonstrated that reinforcement learning could extract implicit knowledge from patient data to learn optimal treatment strategies for sepsis that improve patient outcomes. Our implementation extends this work with modern RL techniques including conservative Q-learning and multi-task learning frameworks.
