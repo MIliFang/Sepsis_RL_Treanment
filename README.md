@@ -144,10 +144,6 @@ All hyperparameters are centralized in `config.py`:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
-
-> **This software is for research purposes only and is not intended for clinical use.** The models and recommendations should not be used to make actual medical decisions without proper clinical validation and regulatory approval.
-
 ## 🙏 Acknowledgments
 
 - MIMIC-III Critical Care Database (Johnson et al., Scientific Data 2016)
@@ -160,7 +156,7 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @misc{sepsisrl2026,
-  author = {Your Name},
+  author = {MiliFang},
   title = {Sepsis RL Treatment Policy},
   year = {2026},
   publisher = {GitHub},
