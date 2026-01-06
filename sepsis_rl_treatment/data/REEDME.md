@@ -41,3 +41,16 @@ Before running:
 - [ ] `mortality_90d` contains only 0/1 values
 - [ ] Drug dosages are non-negative
 - [ ] Time steps sorted chronologically within each ICU stay
+
+## Reference Implementation
+For a reference implementation of the data extraction and preprocessing pipeline, see:
+
+MIMIC-III Clinical Database
+Sepsis-3 Definition Implementation
+Komorowski et al. Code Repository
+Note: This repository does not provide the actual data extraction scripts due to data use restrictions. You must create your own pipeline following your institution's data governance policies.
+
+Scientific Context
+This project builds upon the groundbreaking work published in Nature Medicine by Komorowski et al. (2018), "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care." The original study demonstrated that reinforcement learning could extract implicit knowledge from patient data to learn optimal treatment strategies for sepsis that improve patient outcomes. Our implementation extends this work with modern RL techniques including conservative Q-learning and multi-task learning frameworks.
+
+Disclaimer: This software is for research purposes only and is not intended for clinical use. The models and recommendations should not be used to make actual medical decisions without proper clinical validation and regulatory approval.
