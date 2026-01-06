@@ -2,12 +2,6 @@
 
 This directory is where you should place your preprocessed MIMIC-III dataset file.
 
-## 🔐 Important Notice
-
-- **This directory is gitignored** - your data files will NOT be committed to version control
-- **Do not commit real patient data** to public repositories
-- Ensure you have proper **data use agreements** and **IRB approval** before working with MIMIC-III data
-
 ## 📋 Data Preparation Instructions
 
 ### 1. Obtain MIMIC-III Access
