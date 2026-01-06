@@ -94,8 +94,6 @@ sepsis-rl-treatment/
 ├── ablation_study.py           # Ablation experiments
 ├── data/                       # Data documentation
 │   └── README.md
-├── dataset/                    # Place your data here (gitignored)
-│   └── README.md
 ├── src/                        # Core source code
 │   ├── __init__.py
 │   ├── data_processor.py       # Data preprocessing and action discretization
@@ -108,9 +106,7 @@ sepsis-rl-treatment/
 │   ├── data/
 │   ├── models/
 │   ├── figs/
-│   └── logs/
-└── notebooks/                  # Optional Jupyter notebooks
-    └── explore_data.ipynb
+└── └── logs/
 ```
 
 ## 🔬 Key Components
