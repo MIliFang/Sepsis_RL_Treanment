@@ -7,8 +7,7 @@
 - Reference: [Seymour CW et al., JAMA 2016](http://jamanetwork.com/journals/jama/fullarticle/2492881)
 
 ## Data Placement
-- Place your preprocessed file as `dataset/mimictabl.csv`
-- **This directory is gitignored - your data will not be committed**
+- Place your preprocessed file as `dataset/mimictable.csv`
 - Follow your institution's data governance policies
 
 ## Required Columns
