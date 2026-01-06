@@ -85,16 +85,14 @@ The main input file should be named `mimictabl.csv` and placed in the `../datase
 
 ### Outcome Variables
 - `mortality_90d`: 90-day mortality (0 = survived, 1 = deceased)
-- `mortality_icu`: ICU mortality (0 = survived, 1 = deceased)
-- `los_icu`: ICU length of stay (days)
 
 ## Data Preprocessing Protocol
 
 Our preprocessing follows methodology established in [Komorowski et al., Nature Medicine 2018](https://www.nature.com/articles/s41591-018-0213-5):
 
 1. **Time Alignment**:
-   - All variables aligned to consistent hourly timesteps
-   - Forward filling for short gaps (<6 hours), otherwise considered missing
+   - All variables aligned to consistent 4 hourly timesteps
+   - Forward filling for short gaps (<24 hours), otherwise considered missing
 
 2. **Feature Transformation**:
    - Binary features: Gender (centered around 0)
