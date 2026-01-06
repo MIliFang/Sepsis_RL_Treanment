@@ -56,28 +56,20 @@ The main input file should be named `mimictabl.csv` and placed in the `../datase
 #### Outcome Variables
 - `mortality_90d`: 90-day mortality (0 = survived, 1 = deceased)
 
-Data Preprocessing Notes
-The mimictabl.csv file is not raw MIMIC-III data, but the final output of the AI Clinician preprocessing pipeline (AIClinician_sepsis3_def_160219.py). It has already undergone:
-
-Sepsis Cohort Selection: Patients identified using Sepsis-3 criteria (SOFA ≥ 2 after infection onset).
-Time Alignment: Data aggregated into 4-hour windows.
-Imputation:
-Sample-and-hold for stable vitals (e.g., weight for 48h, HR for 2h).
-Linear interpolation for variables with <5% missingness.
-KNN imputation for other moderate missingness.
-Rule-based estimation (e.g., FiO₂ from O₂ flow, MeanBP from Sys/Dia).
-Outlier Removal: Implausible values (e.g., HR > 250, age > 150 years) are filtered out.
-Feature Engineering: Key scores like SOFA and SIRS are precomputed.
-You should provide this preprocessed table directly for training. No additional preprocessing (beyond what’s in DataProcessor) is needed.
 ## Data Preprocessing Notes
+The `mimictabl.csv` file is **not raw MIMIC-III data**, but the **final output** of the AI Clinician preprocessing pipeline (`AIClinician_sepsis3_def_160219.py`). It has already undergone:
 
-- All continuous variables should be in their natural units (not normalized)
-- Missing values will be handled automatically during preprocessing:
-  - Binary features: filled with 0
-  - Normal features: filled with median
-  - Log features: filled with median, then log-transformed
-- Time steps should be sorted chronologically within each `icustayid`
-- Each row represents one timestep (typically hourly) for a patient
+1.  **Sepsis Cohort Selection**: Patients identified using Sepsis-3 criteria (SOFA ≥ 2 after infection onset).
+2.  **Time Alignment**: Data aggregated into **4-hour windows**.
+3.  **Imputation**:
+    -   Sample-and-hold for stable vitals (e.g., weight for 48h, HR for 2h).
+    -   Linear interpolation for variables with <5% missingness.
+    -   KNN imputation for other moderate missingness.
+    -   Rule-based estimation (e.g., FiO₂ from O₂ flow, MeanBP from Sys/Dia).
+4.  **Outlier Removal**: Implausible values (e.g., HR > 250, age > 150 years) are filtered out.
+5.  **Feature Engineering**: Key scores like `SOFA` and `SIRS` are precomputed.
+
+**You should provide this preprocessed table directly for training.** No additional preprocessing (beyond what’s in `DataProcessor`) is needed.
 
 ## Example Row
 ```csv
